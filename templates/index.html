@@ -3,5 +3,12 @@
 {% block title %}Registrasi{% endblock %}
 
 {% block content %}
-<h1>Permulaan yg baik</h1>
+<h1>Lets Get Started</h1>
+
+<form>
+    <div>
+        {{form.username(class_='form-control', placeholder='Username', autocomplete='off', autofocus='true')}}
+    </div>
+</form>
+
 {% endblock %}

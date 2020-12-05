@@ -10,6 +10,8 @@ def index():
     #return("Saya sudah idup")
     #return render_template("index.html")
     reg_form = RegistrationForm()
+    if reg_form.validate_on_submit():
+        return "Mantab sukses!"
     return render_template("index.html", form=reg_form)
 
 if __name__ == "__main__":

@@ -16,9 +16,9 @@ def index():
         username = reg_form.username.data
         password = reg_form.password.data
         #return "Mantab sukses!"
-        user_object = User.query.filter_by(username=username).first()
-        if user_object:
-            return "Seseorang sudah menggunakan nama ini"
+        # user_object = User.query.filter_by(username=username).first()
+        # if user_object:
+        #     return "Seseorang sudah menggunakan nama ini"
 
         user = User(username=username, password=password)
         db.session.add(user)
